@@ -1,0 +1,58 @@
+{
+    "products": [
+        {
+            "name": "Camiseta Mescla",
+            "price": 54000,
+            "descrip": "Camiseta manga corta cuello redondo unicolor. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057342/Segunda-Prueba-Tecnica/img_1_rrocx2.png"
+        },
+        {
+            "name": "Blusa Couro",
+            "price": 78000,
+            "descrip": "Camisa manga larga con estampado de rayas. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057342/Segunda-Prueba-Tecnica/img_2_p0hyvq.png"
+        },
+        {
+            "name": "Cardigan Tigre",
+            "price": 98000,
+            "descrip": "Cardigan manga larga con estampado de tigre. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057342/Segunda-Prueba-Tecnica/img_3_mzvoqv.png"
+        },
+        {
+            "name": "Cardigan Off White",
+            "price": 53000,
+            "descrip": "Blusa manga larga básica. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057343/Segunda-Prueba-Tecnica/img_4_qeftuo.png"
+        },
+        {
+            "name": "Body Leopardo",
+            "price": 39000,
+            "descrip": "Body manga larga leopardo efecto canalé y escote profundo. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057343/Segunda-Prueba-Tecnica/img_5_xxlksy.png"
+        },
+        {
+            "name": "Buzo Rosa",
+            "price": 108000,
+            "descrip": "Buzo cerrado teñido rosa. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057343/Segunda-Prueba-Tecnica/img_6_renooc.png"
+        },
+        {
+            "name": "Cropped Stripes",
+            "price": 96000,
+            "descrip": "Blusa manga larga estampado stripes. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057343/Segunda-Prueba-Tecnica/img_7_ymwf2t.png"
+        },
+        {
+            "name": "Blusa Black Transparent",
+            "price": 67000,
+            "descrip": "Blusa manga larga, transparencia. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057343/Segunda-Prueba-Tecnica/img_8_mtls0c.png"
+        },
+        {
+            "name": "Camiseta Clutch",
+            "price": 54000,
+            "descrip": "Camiseta básica de manga corta y cuello redondo. Esta prenda está hecha con el corazón por manos Colombianas.",
+            "img": "https://res.cloudinary.com/dzyyi4p7x/image/upload/v1639057343/Segunda-Prueba-Tecnica/img_9_zgx4xw.png"
+        }
+    ]
+}
