@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Box, Grid, Image, FormControl, Select } from '@chakra-ui/react'
@@ -7,6 +7,8 @@ import { listProductsAsync } from '../actions/actionsProducts';
 
 export const Products = () => {
 
+    const { products } = useSelector(store => store.product);
+
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -14,18 +16,32 @@ export const Products = () => {
         // eslint-disable-next-line
     }, [])
 
-    const { products } = useSelector(store => store.product);
+    // eslint-disable-next-line
+    const [orderedProducts, setOrderedProducts] = useState([...products])
+
+    const sortedProducts = (order) => {
+        console.log(order)
+        if (order === 'Menor a mayor') {
+            setOrderedProducts(products.sort((a, b) => a.price - b.price))
+
+        } else if (order === 'Mayor a menor') {
+            products.sort((a, b) => b.price - a.price)
+
+        } else {
+            setOrderedProducts(products)
+        }
+    }
 
     return (
         <>
             <FormControl w='200px' id='filter' mr='25px' bg='white' color='black' borderRadius='10px' m='20px'>
-                <Select focusBorderColor='gray.500' placeholder='Filtrar por precio'>
+                <Select focusBorderColor='gray.500' placeholder='Filtrar por precio' onChange={(e) => sortedProducts(e.target.value)}>
                     <option>Menor a mayor</option>
                     <option>Mayor a menor</option>
                 </Select>
             </FormControl>
 
-            <Grid justifyItems='center' templateColumns='repeat(3, 1fr)' gap={6}>
+            <Grid my='30px' justifyItems='center' templateColumns='repeat(3, 1fr)' gap={6}>
 
                 {
                     products.map((e, i) => (

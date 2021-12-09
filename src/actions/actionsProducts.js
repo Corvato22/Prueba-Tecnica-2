@@ -1,7 +1,32 @@
 import { types } from '../types/types';
 import { db } from "../firebase/firebase";
-import { addDoc, collection, getDocs, query, where, doc, deleteDoc } from "@firebase/firestore";
+import { collection, getDocs, query, where, } from "@firebase/firestore";
 
+
+export const searchAsyn = (product) => {
+
+    return async (dispatch) => {
+
+        const productCollection = collection(db, "products");
+        const q = query(productCollection, where("name", "==", product))
+        const datos = await getDocs(q);
+        console.log(datos)
+        const producto = [];
+        datos.forEach((docu) => {
+            producto.push(docu.data())
+        })
+        console.log(producto)
+        dispatch(searchSync(producto))
+    }
+}
+
+
+export const searchSync = (product) => {
+    return {
+        type: types.search,
+        payload: product
+    }
+}
 
 export const listProductsAsync = () => {
     return async (dispatch) => {

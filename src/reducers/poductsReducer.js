@@ -2,7 +2,8 @@ import { types } from "../types/types";
 
 
 const initialState = {
-    products: []
+    products: [],
+    search: ''
 }
 
 export const poductsReducer = (state = initialState, action) => {
@@ -11,6 +12,10 @@ export const poductsReducer = (state = initialState, action) => {
         case types.list:
             return {
                 products: [...action.payload]
+            }
+        case types.search:
+            return {
+                products: action.payload
             }
 
         default:
